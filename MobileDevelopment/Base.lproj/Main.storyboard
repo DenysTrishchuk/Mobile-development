@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rhT-xC-KXW">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="abn-QU-rMg">
+            <objects>
+                <viewController id="GQd-Go-8uI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CzY-ME-Ilo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="HW7-Df-QB0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="Wqt-Oj-ISz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RM3-Qv-n5G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="601" y="155"/>
+        </scene>
+        <!--General-->
+        <scene sceneID="9DN-WP-icR">
+            <objects>
+                <viewController id="eQk-G1-Djc" customClass="ViewController" customModule="MobileDevelopment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eVL-SK-ncq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тріщук Денис Група ІВ-81 ЗК ІВ-8127" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iqu-gW-yDv">
+                                <rect key="frame" x="152" y="417.5" width="110" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5BS-Re-BAh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Iqu-gW-yDv" firstAttribute="centerX" secondItem="eVL-SK-ncq" secondAttribute="centerX" id="1w0-Kq-JEV"/>
+                            <constraint firstItem="Iqu-gW-yDv" firstAttribute="centerX" secondItem="eVL-SK-ncq" secondAttribute="centerX" id="44L-DB-zyg"/>
+                            <constraint firstItem="Iqu-gW-yDv" firstAttribute="centerY" secondItem="eVL-SK-ncq" secondAttribute="centerY" id="BbK-hN-RzY"/>
+                            <constraint firstItem="Iqu-gW-yDv" firstAttribute="centerY" secondItem="eVL-SK-ncq" secondAttribute="centerY" id="HWq-pO-TkH"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="General" image="tray.full" catalog="system" id="Zg9-hh-SKj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3F4-kW-Xo0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="600" y="-452.00892857142856"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="eRo-cT-3Aa">
+            <objects>
+                <tabBarController id="rhT-xC-KXW" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AZ2-i2-vc4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="eQk-G1-Djc" kind="relationship" relationship="viewControllers" id="18x-ES-LDB"/>
+                        <segue destination="GQd-Go-8uI" kind="relationship" relationship="viewControllers" id="WIv-ms-4Z4"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wu9-jU-aMH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-243" y="-203"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tray.full" catalog="system" width="128" height="88"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
