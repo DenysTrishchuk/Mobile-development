@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="ua.kpi.comsys.iv8127.android_prog.ui.lab1.Lab1Fragment"
+        android:label="@string/title_lab1"
+        tools:layout="@layout/fragment_lab1" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="ua.kpi.comsys.iv8127.android_prog.ui.lab2.Lab2Fragment"
+        android:label="@string/title_lab2"
+        tools:layout="@layout/fragment_lab2" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="ua.kpi.comsys.iv8127.android_prog.ui.lab3.Lab3Fragment"
+        android:label="@string/title_lab3"
+        tools:layout="@layout/fragment_lab3" />
+</navigation>
